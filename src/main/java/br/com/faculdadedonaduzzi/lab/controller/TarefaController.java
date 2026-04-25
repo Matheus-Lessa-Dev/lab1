@@ -23,7 +23,7 @@ public class TarefaController {
 
     @GetMapping
     public List<TarefaReponseDTO> getTasks() {
-        return taskRepository.findAll().stream().map(TarefaReponseDTO::new).toList();
+        return taskRepository.findAll().stream().map(TarefaReponseDTO::new).toList()
     }
 
     @PostMapping
