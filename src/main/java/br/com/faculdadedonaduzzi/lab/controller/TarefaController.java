@@ -18,7 +18,7 @@ public class TarefaController {
 
     @GetMapping("/version")
     public String getVersion() {
-        return "v1.0.0";
+        return "v1.1.0";
     }
 
     @GetMapping
@@ -45,5 +45,6 @@ public class TarefaController {
         Task savedTask = taskRepository.save(newTask);
         return new TarefaReponseDTO(savedTask);
     }
+
 
 }
