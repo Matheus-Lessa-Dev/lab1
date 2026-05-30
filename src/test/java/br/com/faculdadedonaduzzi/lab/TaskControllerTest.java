@@ -18,7 +18,6 @@ public class TaskControllerTest {
 
     @Test
     public void testGetAllTasks() throws Exception {
-        // ERRO INTENCIONAL: chamando /tarefa em vez de /tarefas
         mockMvc.perform(get("/tarefa"))
                .andExpect(status().isOk());
     }
